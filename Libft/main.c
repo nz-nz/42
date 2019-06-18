@@ -6,15 +6,23 @@
 /*   By: htynisha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:28:57 by htynisha          #+#    #+#             */
-/*   Updated: 2019/05/30 15:47:47 by htynisha         ###   ########.fr       */
+/*   Updated: 2019/06/18 21:28:00 by htynisha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int main(void)
+int	main(void)
 {
+	int n;
+	int m;
+
+	n = 27;
+	m = -59485;
 	ft_putendl("Hello");
-	ft_putstr("world");
+	ft_putstr("world_____");
+	ft_putnbr(n);
+	ft_putnbr(m);
+	ft_strnew(n);
 	return (0);
 }

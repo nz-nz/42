@@ -6,7 +6,7 @@
 /*   By: htynisha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/17 20:03:03 by htynisha          #+#    #+#             */
-/*   Updated: 2019/06/01 22:39:58 by htynisha         ###   ########.fr       */
+/*   Updated: 2019/06/08 17:22:28 by htynisha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ void	ft_putnbr(int n)
 		}
 		if (n >= 10)
 			ft_putnbr(n / 10);
-		ft_putchar((char)(n % 10));
+		ft_putchar((char)(n % 10) + '0');
 	}
 }

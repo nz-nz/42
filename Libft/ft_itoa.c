@@ -1,25 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: htynisha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/14 21:26:52 by htynisha          #+#    #+#             */
-/*   Updated: 2019/06/08 18:30:39 by htynisha         ###   ########.fr       */
+/*   Created: 2019/06/08 18:43:48 by htynisha          #+#    #+#             */
+/*   Updated: 2019/06/18 21:22:06 by htynisha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char const *s)
+char	*ft_itoa(int n)
 {
-	int i;
+	long	ln;
+	long	lnbuf;
+	int		ng;
+	int		i;
+	char	*str;
 
+	ln = n;
+	lnbuf = ln;
+	ng = 0;
 	i = 0;
-	while (s[i])
+	if (ln < 0)
 	{
-		write(1, &s[i], 1);
+		ng = 1;
+		ln *= -1;
+	}
+	while (ln)
+	{
+		ln /= 10;
 		i++;
 	}
+	ln = lnbuf;
+	if (ng)
+	{
+		str = ft_strnew(i++);
+		str[0] = '-';
+	}
+	else
+		str = ft_strnew(i);
+	while (ln)
+	{
+		str[i] = (char)(ln % 10) + '0';
+		i--;
+	}
+	return (str);
 }

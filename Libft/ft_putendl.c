@@ -6,15 +6,14 @@
 /*   By: htynisha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/15 22:00:54 by htynisha          #+#    #+#             */
-/*   Updated: 2019/05/30 15:19:36 by htynisha         ###   ########.fr       */
+/*   Updated: 2019/06/08 18:31:08 by htynisha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putendl(char const *s)
 {
-	ft_putstr(s);	
+	ft_putstr(s);
 	write(1, "\n", 1);
 }

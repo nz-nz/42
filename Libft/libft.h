@@ -6,14 +6,16 @@
 /*   By: htynisha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 18:33:17 by htynisha          #+#    #+#             */
-/*   Updated: 2019/05/30 14:07:53 by htynisha         ###   ########.fr       */
+/*   Updated: 2019/06/18 21:19:04 by htynisha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <string.h>
+# include <unistd.h>
+# include <string.h>
+# include <stdlib.h>
 
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
