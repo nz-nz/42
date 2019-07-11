@@ -6,7 +6,7 @@
 /*   By: htynisha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:28:57 by htynisha          #+#    #+#             */
-/*   Updated: 2019/06/18 21:28:00 by htynisha         ###   ########.fr       */
+/*   Updated: 2019/06/21 22:23:56 by htynisha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@ int	main(void)
 	ft_putendl("Hello");
 	ft_putstr("world_____");
 	ft_putnbr(n);
+	ft_putchar('\n');
 	ft_putnbr(m);
-	ft_strnew(n);
+	ft_putchar('\n');
+	ft_putstr(ft_itoa(n));
 	return (0);
 }

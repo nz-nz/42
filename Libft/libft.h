@@ -6,7 +6,7 @@
 /*   By: htynisha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 18:33:17 by htynisha          #+#    #+#             */
-/*   Updated: 2019/06/18 21:19:04 by htynisha         ###   ########.fr       */
+/*   Updated: 2019/06/21 14:32:35 by htynisha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
+# include <string.h>
 
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);

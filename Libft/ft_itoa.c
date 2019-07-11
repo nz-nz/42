@@ -6,7 +6,7 @@
 /*   By: htynisha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 18:43:48 by htynisha          #+#    #+#             */
-/*   Updated: 2019/06/18 21:22:06 by htynisha         ###   ########.fr       */
+/*   Updated: 2019/06/21 22:25:07 by htynisha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,13 @@ char	*ft_itoa(int n)
 	ln = lnbuf;
 	if (ng)
 	{
-		str = ft_strnew(i++);
+		str = ft_strnew(i + 1);
 		str[0] = '-';
 	}
 	else
 		str = ft_strnew(i);
-	while (ln)
+	i--;
+	while (ln > 0 && i >= 0)
 	{
 		str[i] = (char)(ln % 10) + '0';
 		i--;
